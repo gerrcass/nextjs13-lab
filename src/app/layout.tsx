@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Roboto } from "next/font/google";
+import Navbar from "@/components/Navbar";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -18,8 +19,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
-        <nav className="font-bold">Page Layout</nav>
+      <body className={`bg-slate-800 ${roboto.className}`}>
+        <Navbar />
         {children}
       </body>
     </html>

@@ -10,7 +10,7 @@ export default async function UsersPage() {
 
   const users = await usersData;
 
-  console.log("Hello, guess where am I?");
+  // console.log("Hello, guess where am I?");
 
   const content = (
     <section>
